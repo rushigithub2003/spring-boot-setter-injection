@@ -1,12 +1,14 @@
 package com.example.setter.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 
 import com.example.setter.entity.Customer;
 import com.example.setter.repository.CustomerRepo;
 
 @Service
+@Primary
 public class CustomerServiceImpl implements CustomerService{
 	@Autowired
 	CustomerRepo customerRepo;
